@@ -1,0 +1,45 @@
+Testing things on an all-AMD Fedora 43 desktop.
+
+
+### Shortcuts
+- [Setup](#setup)
+- [Games](#games)
+- [Software](#software)
+
+---
+
+## Setup
+
+---
+
+### PC Hardware
+- AMD Ryzen 5 5600G (iGPU disabled)
+- AMD Radeon RX 6600XT (8GB)
+- 32GB RAM (2x16GB, 3600Mhz, DDR4)
+- OS is on a SATA SSD.
+- Most games installed on a hard drive, some on an extra NVMe, a couple on the OS drive.
+
+### PC Software
+- Fedora 43 (initially installed as Fedora 41)
+- KDE Plasma (Wayland)
+- Steam (Runtime) (i.e. not the flatpak)
+- Heroic Games Launcher
+  - For Epic Store and GOG games, as well as a launcher for various additonal games.
+- Default Proton: [GE-Proton9-18](https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-18) (unless otherwise specified)
+    - To install a custom Proton version, I use [ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt) (in Flatpaks, look for `pupgui2`).
+
+---
+
+## Games
+Games I've tested and how well they work, plus tinker steps to get them working if possible.
+
+^ - Using a different Proton version. (notes will mention why)
+
+---
+
+### ^ [Second Stellar](https://store.steampowered.com/app/3176850/Second_Stellar/)
+- Using GE-Proton10-20-rtsp19.
+- Due to an issue with "newer Unity updates" on Proton9, the mouse may not work correctly. In this case, you may be unable to actually use your weapon skills as expected. You can do one of the following:
+  - Re-map things to not use the mouse buttons at all (use keyboard keys, map the mouse to keyboard keys, use a controller, etc)
+  - Change your proton to a Proton10 version.
+- *Technically* you can still use the weapon skills on Proton9, you just have to hold another mouse button while you do it, which is a little awkward.
