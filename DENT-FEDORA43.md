@@ -51,4 +51,4 @@ Games I've tested and how well they work, plus tinker steps to get them working 
 
 ### [Just Cause 3](https://store.steampowered.com/app/225540/Just_Cause_3/)
 - Launch options: `gamemoderun %command% --vfs-fs dropzone --vfs-archive patch_win64 --vfs-archive archives_win64 --vfs-archive dlc_win64 --vfs-fs`
-  - I forget where i got these from or what they do.
+  - [A source](https://steamcommunity.com/sharedfiles/filedetails/?id=570542665). TL;DR, this pretty much uses the `dropzone` folder to replace the intro video, and preserves loading the other content.
