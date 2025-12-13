@@ -43,3 +43,12 @@ Games I've tested and how well they work, plus tinker steps to get them working 
   - Re-map things to not use the mouse buttons at all (use keyboard keys, map the mouse to keyboard keys, use a controller, etc)
   - Change your proton to a Proton10 version.
 - *Technically* you can still use the weapon skills on Proton9, you just have to hold another mouse button while you do it, which is a little awkward.
+
+### [Garry's Mod](https://store.steampowered.com/app/4000/Garrys_Mod/)
+- Fairly inconsistent on this distro; I have ended up using the Windows build under Proton as somewhat ironically that's more stable. Specifically, if I remember correctly:
+  - The default 32-bit build fails to render the webviews, so the menus don't work.
+  - The 64-bit branch likes to crash and is generally unstable. Needed patches to update webview for that to even work.
+
+### [Just Cause 3](https://store.steampowered.com/app/225540/Just_Cause_3/)
+- Launch options: `gamemoderun %command% --vfs-fs dropzone --vfs-archive patch_win64 --vfs-archive archives_win64 --vfs-archive dlc_win64 --vfs-fs`
+  - I forget where i got these from or what they do.
