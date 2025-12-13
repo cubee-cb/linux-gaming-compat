@@ -38,7 +38,7 @@ Games I've tested and how well they work, plus tinker steps to get them working 
 ---
 
 ### ^ [Second Stellar](https://store.steampowered.com/app/3176850/Second_Stellar/)
-- Using GE-Proton10-20-rtsp19.
+- Using GE-Proton10-20-rtsp19. (I already had this version installed for VRChat; RTSP is not needed for this game)
 - Due to an issue with "newer Unity updates" on Proton9, the mouse may not work correctly. In this case, you may be unable to actually use your weapon skills as expected. You can do one of the following:
   - Re-map things to not use the mouse buttons at all (use keyboard keys, map the mouse to keyboard keys, use a controller, etc)
   - Change your proton to a Proton10 version.
