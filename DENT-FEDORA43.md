@@ -35,14 +35,14 @@ A list of games that "just work". Any issues that exist here should be small and
 
 ---
 
-- Abandoned Pub (Neuro-Sama Game Jam) (itch.io via Heroic)
-- Bashful Adoration (itch.io via Heroic)
-- Bloons TD 6 (Steam + Epic Store via Heroic)
-- DNF Duel (Epic Store via Heroic)
-- Rocket League (Epic Store via Heroic)
-- SM64 Co-op DX (Link via Heroic)
-- UNDERTALE Yellow (Link via Heroic)
-- Unhando (Neuro-Sama Game Jam) (itch.io via Heroic)
+- Abandoned Pub (Neuro-Sama Game Jam) ([itch.io](https://pipeheads.itch.io/abandoned-pub) via Heroic)
+- Bashful Adoration Demo ([itch.io](https://kittywampusgames.itch.io/bashfuladoration) via Heroic)
+- Bloons TD 6 ([Steam](https://store.steampowered.com/app/960090/Bloons_TD_6/) + [Epic Store](https://store.epicgames.com/en-US/p/bloons-td-6-bf95a0) via Heroic)
+- DNF Duel ([Epic Store](https://store.epicgames.com/en-US/p/dnf-duel-07d055) via Heroic)
+- Rocket League ([Epic Store](https://store.epicgames.com/en-US/p/rocket-league) via Heroic)
+- SM64 Co-op DX (Linux) ([GitHub](https://github.com/coop-deluxe/sm64coopdx) via Heroic)
+- UNDERTALE Yellow ([Game Jolt](https://gamejolt.com/games/UndertaleYellow/136925) via Heroic)
+- Unhando (Neuro-Sama Game Jam) ([itch.io](https://jwapobie.itch.io/unhando) via Heroic)
 
 ---
 
