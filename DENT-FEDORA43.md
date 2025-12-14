@@ -22,8 +22,8 @@ Testing things on an all-AMD Fedora 43 desktop.
 ### PC Software
 - Distro: Fedora 43 (upgraded from Fedora 41)
 - Desktop: KDE Plasma, Wayland
-- Steam: Runtime (i.e. not the flatpak)
-- Epic Store + GOG: Heroic Games Launcher
+- Steam: `dnf` package (i.e. not the flatpak)
+- Epic Store + GOG: Heroic Games Launcher (AppImage version)
   - Also used as a launcher for various additional games.
 - Proton: [GE-Proton9-18](https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-18) (Default for all games and launchers, unless otherwise specified)
     - To install a custom Proton version, I use [ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt) (in Flatpaks, look for `pupgui2`).
