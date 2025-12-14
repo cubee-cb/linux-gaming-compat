@@ -62,8 +62,8 @@ Games I've tested and how well they work, plus tinker steps to get them working 
 
 ### ^ Garry's Mod ([Steam](https://store.steampowered.com/app/4000/Garrys_Mod/))
 - GMod has been fairly unstable on this distro; I have ended up using the Windows build under `GE-Proton9-18` as somewhat ironically that's more stable. Specifically, if I remember correctly:
-  - The default 32-bit build fails to render the webviews, so the menus don't work.
-  - The 64-bit branch likes to crash and is generally unstable. Needed patches to update webview for that to even work.
+  - The default 32-bit build I think just crashed on launch.
+  - The 64-bit branch has outdated CEF, so the menus don't work properly. Needed [patches to update CEF](https://github.com/solsticegamestudios/GModPatchTool). It also likes to crash.
 
 ### Just Cause 3 ([Steam](https://store.steampowered.com/app/225540/Just_Cause_3/))
 - Works pretty much flawlessly. Clicking off the window may disable Fullscreen Mode, you will have to turn it back on in the settings.
