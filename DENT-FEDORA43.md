@@ -19,12 +19,12 @@ Testing things on an all-AMD Fedora 43 desktop.
 - Most games installed on a hard drive, some on an extra NVMe, a couple on the OS drive.
 
 ### PC Software
-- Fedora 43 (initially installed as Fedora 41)
-- KDE Plasma (Wayland)
-- Steam (Runtime) (i.e. not the flatpak)
-- Heroic Games Launcher
-  - For Epic Store and GOG games, as well as a launcher for various additonal games.
-- Default Proton: [GE-Proton9-18](https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-18) (unless otherwise specified)
+- Distro: Fedora 43 (upgraded from Fedora 41)
+- Desktop: KDE Plasma, Wayland
+- Steam: Runtime (i.e. not the flatpak)
+- Epic Store + GOG: Heroic Games Launcher
+  - Also used as a launcher for various additional games.
+- Proton: [GE-Proton9-18](https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-18) (Default for all games and launchers, unless otherwise specified)
     - To install a custom Proton version, I use [ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt) (in Flatpaks, look for `pupgui2`).
 
 ---
@@ -53,3 +53,7 @@ Games I've tested and how well they work, plus tinker steps to get them working 
 - To skip the intro videos:
   - [How-to](https://steamcommunity.com/sharedfiles/filedetails/?id=570542665). This uses the `dropzone` folder to replace the intro video with an empty file.
   - Launch options: `gamemoderun %command% --vfs-fs dropzone --vfs-archive patch_win64 --vfs-archive archives_win64 --vfs-archive dlc_win64 --vfs-fs`
+
+### [Borderlands 3](https://store.epicgames.com/en-US/p/borderlands-3) (Epic Store via Heroic)
+- Complains about being unable to save the settings.
+  - I forgot what I did to fix it, and if the fix was consistent.
