@@ -1,6 +1,5 @@
 Testing things on an all-AMD Fedora 43 desktop.
 
-
 ### Shortcuts
 - [Setup](#setup)
 - [Games](#games)
