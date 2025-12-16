@@ -1,5 +1,7 @@
 Testing things on an all-AMD Fedora 43 desktop.
 
+This is primarily about Windows games, though the odd Linux-native game may show up here depending on its behaviour.
+
 ### Shortcuts
 - [Setup](#setup)
 - [Perfect Games](#perfect-games)
@@ -26,7 +28,8 @@ Testing things on an all-AMD Fedora 43 desktop.
 - Epic Store + GOG: Heroic Games Launcher (AppImage version)
   - Also used as a launcher for various additional games.
 - Proton: [GE-Proton9-18](https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-18) (Default for all games and launchers, unless otherwise specified)
-    - To install a custom Proton version, I use [ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt) (in Flatpaks, look for `pupgui2`).
+    - To install a custom Proton version, I typically use [ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt) (in Flatpaks, look for `pupgui2`).
+    - For manual installation, place the tool's folder in `.steam/steam/compatibilitytools.d/`.
 
 ---
 
