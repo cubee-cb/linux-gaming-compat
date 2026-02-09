@@ -5,7 +5,7 @@ This is primarily about Windows games, though the odd Linux-native game may show
 ### Shortcuts
 - [Setup](#setup)
 - [Perfect Games](#perfect-games)
-- [Games](#games)
+- [Games](#tinker-games)
 - [Software](#software)
 
 ---
@@ -19,7 +19,7 @@ This is primarily about Windows games, though the odd Linux-native game may show
 - AMD Radeon RX 6600XT (8GB)
 - 32GB RAM (2x16GB, 3600Mhz, DDR4)
 - OS is on a SATA SSD.
-- Most games installed on a hard drive, some on an extra NVMe, a couple on the OS drive.
+- Most games installed on a hard drive, some on an NVMe, a couple on the OS drive.
 
 ### PC Software
 - Distro: Fedora 43 (upgraded from Fedora 41)
@@ -49,7 +49,7 @@ A list of games that "just work". Any issues that exist here should be small and
 
 ---
 
-## Games
+## Tinker Games
 Games I've tested and how well they work, plus tinker steps to get them working if possible.
 
 ^ - Specified Proton version. (notes will mention what version and why)
@@ -68,15 +68,19 @@ Games I've tested and how well they work, plus tinker steps to get them working 
   - The default 32-bit build I think just crashed on launch.
   - The 64-bit branch has outdated CEF, so the menus don't work properly. Needed [patches to update CEF](https://github.com/solsticegamestudios/GModPatchTool). It also likes to crash.
 
-### Just Cause 3 ([Steam](https://store.steampowered.com/app/225540/Just_Cause_3/))
+### Just Cause 3 + DLC ([Steam](https://store.steampowered.com/app/225540/Just_Cause_3/))
 - Works pretty much flawlessly. Clicking off the window may disable Fullscreen Mode, you will have to turn it back on in the settings.
+  - You can probably work around this using GameScope.
 - To skip the intro videos:
   - [How-to](https://steamcommunity.com/sharedfiles/filedetails/?id=570542665). This uses the `dropzone` folder to replace the intro video with an empty file.
-  - Launch options: `gamemoderun %command% --vfs-fs dropzone --vfs-archive patch_win64 --vfs-archive archives_win64 --vfs-archive dlc_win64 --vfs-fs`
+- Launch options (with DLC: `gamemoderun %command% --vfs-fs dropzone --vfs-archive patch_win64 --vfs-archive archives_win64 --vfs-archive dlc_win64 --vfs-fs`
 
 ### Borderlands 3 ([Epic Store](https://store.epicgames.com/en-US/p/borderlands-3) via Heroic)
 - Complains about being unable to save the settings.
   - I forgot what I did to fix it, and if the fix was consistent.
+ 
+### Tiny Tina's Wonderlands
+- I think this just works? I don't remember any issues installing it. Definitely no issues with gameplay or multiplayer.
 
 ### Ghostrunner ([Epic Store](https://store.epicgames.com/en-US/p/ghostrunner) via Heroic)
 - I had to install the following via Winetricks:
