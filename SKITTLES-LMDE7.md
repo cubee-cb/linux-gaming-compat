@@ -15,7 +15,7 @@ Testing things on an overpriced laptop I got because I wanted to play VR without
 ### PC Hardware
 - AMD Ryzen 5 6600HS
 - Nvidia RTX 3050 Mobile (4GB) (drivers maybe not installed at this time; untested)
-- 16GB RAM (2x16GB, 3600Mhz, DDR4)
+- 16GB RAM
 - 500GB NVMe
 
 ### PC Software
