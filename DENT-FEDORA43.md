@@ -105,8 +105,16 @@ Software I've tested and how well they work, plus tinker steps to get them worki
   - Try opting into "Steam Beta Update", then near the bottom of the "Interface" menu turn on "Use experimental SteamRT3 Steam Client". This made Big Picture work as expected for me.
     - Likely, this is due to some library differences on Fedora (or at least my install) that are worked around by making Steam run itself in its own container. (basically: SteamRT3 > Steam *Linux* Runtime 3.0)
 
-### VNyan ([itch.io](https://suvidriel.itch.io/vnyan) via Heroic)
-- Needs fonts installed via Winetricks to render text properly:
-  - `corefonts`
-- Unsure if transparency works; you may need to colour key the black background in OBS and make sure your model never uses pure black.
+### VNyan ([itch.io](https://suvidriel.itch.io/vnyan))
+- Common:
+  - NDI output doesn't seem to work, at least not with Flatpak OBS's DistroAV plugin. Unsure where the issue lies.
+- Via `umu-launcher` command line:
+  - For Spout2 capture, use [Spout2PW](https://github.com/hoshinolina/spout2pw/wiki).
+    - Effectively, for Flatpak OBS install `Plugin.OBSPWVideo` then run VNyan with `/path/to/spout2pw.sh umu-run /path/to/VNyan.exe`
+    - This way, you can have transparent capture without using screen capture with a colour key.
+- Via Heroic:
+  - Needs fonts installed via Winetricks to render text properly:
+    - `corefonts`
+  - Unsure if transparency works; you may need to colour key the black background in OBS and make sure your model never uses pure black.
+    - Using Spout2PW with Heroic doesn't seem to work. Log ends immediately after launch, though Heroic still shows launching.
 
