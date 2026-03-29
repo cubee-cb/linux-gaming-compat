@@ -59,9 +59,9 @@ Games I've tested and how well they work, plus tinker steps to get them working 
 ### ^ Second Stellar ([Steam](https://store.steampowered.com/app/3176850/Second_Stellar/))
 - Using `GE-Proton10-20-rtsp19`. (I already had this version installed for VRChat; RTSP is not needed for this game)
   - Due to an issue with "newer Unity updates" on Proton9, the mouse may not work correctly. In this case, you may be unable to actually use your weapon skills as expected. You can do one of the following:
-    - Re-map things to not use the mouse buttons at all (use keyboard keys, map the mouse to keyboard keys, use a controller, etc)
     - Change your proton to a Proton10 version.
-  - *Technically* you can still use the weapon skills on Proton9, you just have to hold another mouse button while you do it, which is a little awkward.
+    - Re-map things to not use the mouse buttons at all (use keyboard keys, map the mouse to keyboard keys, use a controller, etc)
+    - *Technically* you can still use the weapon skills on Proton9, you just have to hold another mouse button while you do it, which is a little awkward.
 
 ### ^ Garry's Mod ([Steam](https://store.steampowered.com/app/4000/Garrys_Mod/))
 - GMod has been fairly unstable on this distro; I have ended up using the Windows build under `GE-Proton9-18` as somewhat ironically that's more stable. Specifically, if I remember correctly:
@@ -97,6 +97,13 @@ Software I've tested and how well they work, plus tinker steps to get them worki
 ^ - Specified Proton version. (notes will mention what version and why)
 
 ---
+
+### Steam (Big Picture Mode)
+- If Big Picture Mode is running slow/stuttery or looks broken (e.g. the sidebar menu blacks out the screen):
+  - Make sure "Enable GPU accelerated rendering in web views" is enabled.
+    - Doing this without also using the SteamRT3 Client didn't make much of a difference for me performance-wise, though this was a while ago and things may have changed.
+  - Try opting into "Steam Beta Update", then near the bottom of the "Interface" menu turn on "Use experimental SteamRT3 Steam Client". This made Big Picture work as expected for me.
+    - Likely, this is due to some library differences on Fedora (or at least my install) that are worked around by making Steam run itself in its own container. (basically: SteamRT3 > Steam *Linux* Runtime 3.0)
 
 ### VNyan ([itch.io](https://suvidriel.itch.io/vnyan) via Heroic)
 - Needs fonts installed via Winetricks to render text properly:
