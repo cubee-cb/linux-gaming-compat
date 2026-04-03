@@ -98,6 +98,24 @@ Software I've tested and how well they work, plus tinker steps to get them worki
 
 ---
 
+### OBS (Flatpak)
+- OBS is installed as a Flatpak.
+- Setup VKCapture Plugin for Vulkan/OpenGl Game Capture:
+  - `flatpak install OBSVkCapture` to add the OBS VKCapture plugin.
+      - Get both the `Plugin` and `VulkanLayer` (I used `25.08` for `VulkanLayer`)
+    - `sudo dnf install obs-vkcapture` to get VKCapture for non-flatpak apps. (may not be needed if you have already installed the Flatpak `VulkanLayer`)
+  - Steam games:
+    - Set Launch Options to `obs-gamecapture %command%` (`OBS_VKCAPTURE=1 %command%` also works when the game is using Vulkan)
+  - Minecraft via Prism Launcher (Flatpak):
+    - Go to Settings > Minecraft > Custom Commands. (It may be worth going to Global Settings if prompted, just so this is used by default for all instances)
+    - Set Wrapper Command to `/usr/lib/extensions/vulkan/OBSVkCapture/bin/obs-gamecapture`
+      - Using just `obs-gamecapture` or `/usr/bin/obs-gamecapture` both result in a "file not found" crash.
+- Setup Spout2PW for Spout2 Capture:
+  - [Setup here](https://github.com/hoshinolina/spout2pw/wiki).
+    - Also `flatpak install OBSPWVideo` for the OBS plugin.
+  - umu Launcher:
+    - `/path/to/spout2pw.sh umu-run /path/to/Application.exe`
+
 ### Steam (Big Picture Mode)
 - If Big Picture Mode is running slow/stuttery or looks broken (e.g. the sidebar menu blacks out the screen):
   - Make sure "Enable GPU accelerated rendering in web views" is enabled.
@@ -109,12 +127,10 @@ Software I've tested and how well they work, plus tinker steps to get them worki
 - Common:
   - NDI output doesn't seem to work, at least not with Flatpak OBS's DistroAV plugin. Unsure where the issue lies.
 - Via `umu-launcher` command line:
-  - For Spout2 capture, use [Spout2PW](https://github.com/hoshinolina/spout2pw/wiki).
-    - Effectively, for Flatpak OBS install `Plugin.OBSPWVideo` then run VNyan with `/path/to/spout2pw.sh umu-run /path/to/VNyan.exe`
+  - For Spout2 capture, use [Spout2PW](https://github.com/hoshinolina/spout2pw/wiki). (see above for OBS setup)
     - This way, you can have transparent capture without using screen capture with a colour key.
 - Via Heroic:
   - Needs fonts installed via Winetricks to render text properly:
     - `corefonts`
   - Unsure if transparency works; you may need to colour key the black background in OBS and make sure your model never uses pure black.
     - Using Spout2PW with Heroic doesn't seem to work. Log ends immediately after launch, though Heroic still shows launching.
-
