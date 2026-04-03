@@ -100,12 +100,14 @@ Software I've tested and how well they work, plus tinker steps to get them worki
 
 ### OBS (Flatpak)
 - OBS is installed as a Flatpak.
-- Setup VKCapture Plugin for Vulkan/OpenGl Game Capture:
-  - `flatpak install OBSVkCapture` to add the OBS VKCapture plugin.
+- Setup VkCapture Plugin for Vulkan/OpenGL Game Capture:
+  - `flatpak install OBSVkCapture` to add the OBS VkCapture plugin.
       - Get both the `Plugin` and `VulkanLayer` (I used `25.08` for `VulkanLayer`)
-    - `sudo dnf install obs-vkcapture` to get VKCapture for non-flatpak apps. (may not be needed if you have already installed the Flatpak `VulkanLayer`)
+    - `sudo dnf install obs-vkcapture` to get VkCapture for non-flatpak apps.
+      - Unsure if this is needed when the Flatpak `VulkanLayer` is installed, I installed this first so I haven't tested it.
   - Steam games:
-    - Set Launch Options to `obs-gamecapture %command%` (`OBS_VKCAPTURE=1 %command%` also works when the game is using Vulkan)
+    - Set Launch Options to `obs-gamecapture %command%`
+      - You can use `OBS_VKCAPTURE=1 %command%` instead if the game is using Vulkan.
   - Minecraft via Prism Launcher (Flatpak):
     - Go to Settings > Minecraft > Custom Commands. (It may be worth going to Global Settings if prompted, just so this is used by default for all instances)
     - Set Wrapper Command to `/usr/lib/extensions/vulkan/OBSVkCapture/bin/obs-gamecapture`
