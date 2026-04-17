@@ -21,7 +21,7 @@ Testing things on an overpriced laptop I got because I wanted to play VR without
 ### PC Software
 - Distro: Linux Mint (LMDE 7)
 - Desktop: Cinnamon, X11
-- Steam: System package (i.e. not the flatpak)
+- Steam: Flatpak
 - Proton: Not used.
 
 ---
